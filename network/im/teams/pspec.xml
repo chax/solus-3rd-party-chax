@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>teams</Name>
+        <Packager>
+            <Name>Mislav Čakarić</Name>
+            <Email>mcakaric@gmail.com</Email>
+        </Packager>
+	<Summary>Microsoft Teams for Linux is your chat-centered workspace in Office 365.</Summary>
+        <Description>Instantly access all your team’s content from a single place where messages, files, people and tools live together.</Description>
+        <License>Copyright (c) 2019 Microsoft</License>
+	<Archive sha1sum="e0da0eab8465a11066d9687f0b431a095ddc43c9" type="binary">https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.2.00.32451_amd64.deb</Archive>
+        <BuildDependencies>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <RuntimeDependencies>
+            <Dependency>gconf</Dependency>
+        </RuntimeDependencies>
+        <Name>teams</Name>
+        <Icon>teams</Icon>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/teams</Path>
+        </Files>
+    </Package>
+    
+    <History>
+       <Update release="1">
+            <Date>11-12-2019</Date>
+            <Version>1.2.00.32451</Version>
+            <Comment>Add Microsoft Teams to repositories</Comment>
+            <Name>Mislav Čakarić</Name>
+            <Email>mcakaric@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
