@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>obinskit</Name>
+        <Packager>
+            <Name>Mislav Čakarić</Name>
+            <Email>mcakaric@gmail.com</Email>
+        </Packager>
+	<Summary>Microsoft Teams for Linux is your chat-centered workspace in Office 365.</Summary>
+        <Description>Instantly access all your team’s content from a single place where messages, files, people and tools live together.</Description>
+        <License>Copyright (c) 2019 Microsoft</License>
+	<Archive sha1sum="813eedb5ddca80b937deccfe1bb2586bc64390c4" type="binary">http://releases.obins.net/occ/linux/deb/ObinsKit_1.1.1_x64.deb</Archive>
+        <BuildDependencies>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <RuntimeDependencies>
+            <Dependency>gconf</Dependency>
+        </RuntimeDependencies>
+        <Name>obinskit</Name>
+        <Icon>obinskit</Icon>
+        <Files>
+            <Path fileType="executable">/opt/ObinsKit/obinskit</Path>
+            <Path fileType="data">/opt/ObinsKit</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+        </Files>
+    </Package>
+    
+    <History>
+       <Update release="1">
+            <Date>11-12-2019</Date>
+            <Version>1.1.1</Version>
+            <Comment>Add Microsoft Teams to repositories</Comment>
+            <Name>Mislav Čakarić</Name>
+            <Email>mcakaric@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
