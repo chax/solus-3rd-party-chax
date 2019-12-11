@@ -1,4 +1,5 @@
 # Personal 3rd party Solus repo
+Disclaimer: install this at your own risk. This is unofficial Solus 3rd party repo and Solus team doesn't claim any responsibility for content of this repository, as neither do I as the maintainer of this repository.
 
 ## Installing packages
 To install a package just follow instructions...
