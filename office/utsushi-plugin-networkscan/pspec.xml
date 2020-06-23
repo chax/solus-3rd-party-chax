@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>utsushi-plugin-networscan</Name>
+        <Packager>
+            <Name>Mislav Čakarić</Name>
+            <Email>mcakaric@gmail.com</Email>
+        </Packager>
+        <Summary>Networkscan plugin for utsushi.</Summary>
+        <Description>Use your Epson scanner to scan over network using utsushi utility.</Description>
+        <License>Copyright (c) 2019 Seiko Epson Corporation</License>
+        <Archive sha1sum="3eda04d7219d016f3c71063b902109056100fd80" type="binary">https://download2.ebz.epson.net/imagescanv3/debian/latest1/deb/x64/imagescan-bundle-debian-10-3.63.0.x64.deb.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <RuntimeDependencies>
+            <Dependency>utsushi</Dependency>
+        </RuntimeDependencies>
+        <Name>utsushi-plugin-networscan</Name>
+        <Icon>utsushi-plugin-networscan</Icon>
+        <Files>
+            <Path fileType="executable">/usr/lib64/utsushi/networkscan</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>24-06-2020</Date>
+            <Version>1.1.3</Version>
+            <Comment>Add utsushi-plugin-networscan to repository</Comment>
+            <Name>Mislav Čakarić</Name>
+            <Email>mcakaric@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
