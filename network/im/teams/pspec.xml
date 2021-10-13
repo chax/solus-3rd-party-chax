@@ -9,8 +9,8 @@
         </Packager>
     <Summary>Microsoft Teams for Linux is your chat-centered workspace in Office 365.</Summary>
         <Description>Instantly access all your team’s content from a single place where messages, files, people and tools live together.</Description>
-        <License>Copyright (c) 2020 Microsoft</License>
-    <Archive sha1sum="3ccd9689312c6d88ab2c48a47356461ac30e819d" type="binary">https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.4.00.13653_amd64.deb</Archive>
+        <License>Copyright (c) 2021 Microsoft</License>
+    <Archive sha1sum="db859afbd64578bd941dfa77f172d8d5192e04cc" type="binary">https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.4.00.26453_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
         </BuildDependencies>
@@ -31,6 +31,13 @@
     </Package>
 
     <History>
+    <Update release="10">
+            <Date>13-10-2021</Date>
+            <Version>1.4.00.26453</Version>
+            <Comment>Update Teams to 1.4.00.26453</Comment>
+            <Name>Mislav Čakarić</Name>
+            <Email>mcakaric@gmail.com</Email>
+    </Update>
     <Update release="9">
             <Date>14-06-2021</Date>
             <Version>1.4.00.13653</Version>
