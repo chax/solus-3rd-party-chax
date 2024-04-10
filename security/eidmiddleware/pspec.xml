@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>eidmiddleware</Name>
+        <Packager>
+            <Name>Mislav Čakarić</Name>
+            <Email>mcakaric@gmail.com</Email>
+        </Packager>
+        <Summary>AKD eID Middleware basic user package.</Summary>
+        <Description>Enables the use of AKD smart cards on Debian platform in standard user scenarios. 
+That includes PIN management, certificate management and smart card data management.
+Provides PKCS#11 interface for use in smart card logon, qualified signature, e-mail 
+and document encryption, decryption, and secure VPN connection. Provides Signer service 
+that allows signing electronic documents qualified electronic signature for all persons 
+who possess a valid electronic ID card with signature certificate.
+Requires PC/SC compliant and enabled smart card reader.</Description>
+        <License>Custom</License>
+        <Archive sha1sum="b51155295759317c63b82776f8d421fd6c80030e" type="binary">https://www.eid.hr/datastore/filestore/10/eidmiddleware_v3.7.4_amd64.deb</Archive>
+    </Source>
+
+    <Package>
+        <RuntimeDependencies>
+            <Dependency>pcsc-lite</Dependency>
+        </RuntimeDependencies>
+        <Name>eidmiddleware</Name>
+        <Icon>eidmiddleware</Icon>
+        <Files>
+            <Path fileType="*">/</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>10-04-2024</Date>
+            <Version>3.7.4</Version>
+            <Comment>Add eidmiddleware to repository</Comment>
+            <Name>Mislav Čakarić</Name>
+            <Email>mcakaric@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
