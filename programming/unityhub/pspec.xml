@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>unityhub</Name>
+        <Packager>
+            <Name>Mislav Čakarić</Name>
+            <Email>mcakaric@gmail.com</Email>
+        </Packager>
+    <Summary>Unity Hub</Summary>
+        <Description>The Unity Hub is a standalone application that streamlines the way you find, download, and manage your Unity Projects and installations.</Description>
+        <License>Copyright (c) 2025 Unity Technologies</License>
+    <Archive sha1sum="30ae88f943b7a1ae4ccccfb03beed18b7d39836e" type="binary">https://hub.unity3d.com/linux/repos/deb/pool/main/u/unity/unityhub_amd64/unityhub-amd64-3.12.1.deb</Archive>
+        <BuildDependencies>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <RuntimeDependencies>
+            <Dependency>at-spi2</Dependency>
+            <Dependency>cpio</Dependency>
+            <Dependency>libgtk-3</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>libnss</Dependency>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>libxtst</Dependency>
+            <Dependency>xdg-utils</Dependency>
+            <Dependency>util-linux</Dependency>
+            <Dependency>libsecret</Dependency>
+            <Dependency>libxml2</Dependency>
+        </RuntimeDependencies>
+        <Name>unityhub</Name>
+        <Icon>unityhub</Icon>
+        <Files>
+            <Path fileType="executable">/opt/unityhub</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+    <Update release="1">
+            <Date>12-05-2025</Date>
+            <Version>3.12.1</Version>
+            <Comment>Add unityhub to repositories</Comment>
+            <Name>Mislav Čakarić</Name>
+            <Email>mcakaric@gmail.com</Email>
+    </Update>
+    </History>
+</PISI>
