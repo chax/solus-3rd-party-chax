@@ -7,10 +7,10 @@
             <Name>Mislav Čakarić</Name>
             <Email>mcakaric@gmail.com</Email>
         </Packager>
-	<Summary>ObinsKit for Anne Pro and Anne Pro 2</Summary>
+        <Summary>ObinsKit for Anne Pro and Anne Pro 2</Summary>
         <Description>ObinsKit for Anne Pro and Anne Pro 2 used to configure your keyboard and flash new firmware.</Description>
         <License>ObinsLab</License>
-	<Archive sha1sum="3098377329886e2bcf5038fb1857fab6584c34e8" type="binary">http://releases.obins.net/occ/linux/deb/ObinsKit_1.1.4_x64.deb</Archive>
+        <Archive sha1sum="691738617956cf9cf05b20fd6f4d65f922d9d646" type="binary">https://www.hexcore.xyz/occ/linux/deb/ObinsKit_1.2.11_x64.deb</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
         </BuildDependencies>
@@ -30,8 +30,15 @@
             <Path fileType="data">/usr/share/icons</Path>
         </Files>
     </Package>
-    
+
     <History>
+        <Update release="2">
+            <Date>17-02-2026/Date>
+            <Version>1.2.11</Version>
+            <Comment>Add ObinsKit to repositories</Comment>
+            <Name>Mislav Čakarić</Name>
+            <Email>mcakaric@gmail.com</Email>
+        </Update>
        <Update release="1">
             <Date>10-01-2021/Date>
             <Version>1.1.4</Version>
