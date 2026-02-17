@@ -11,8 +11,8 @@ Version = get.srcVERSION()
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("ar xf unityhub-amd64-%s.deb" % Version)
-    shelltools.system("tar xf data.tar.bz2")
+    shelltools.system("ar xf UnityHubSetup-%s-amd64.deb" % Version)
+    shelltools.system("tar xf data.tar.*")
 
 def install():
     shelltools.system("sed -e '/TryExec=unityhub/d' -i usr/share/applications/unityhub.desktop")
