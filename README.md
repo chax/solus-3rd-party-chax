@@ -3,21 +3,14 @@ Disclaimer: install this at your own risk. This is unofficial Solus 3rd party re
 
 ## Installing packages
 To install a package just follow instructions...
+Git clone this repo, change directory to package you want to install, then execute these commands:
 
-### Teams
-```
-sudo eopkg.py3 bi --ignore-safety https://raw.githubusercontent.com/chax/solus-3rd-party-chax/master/network/im/teams/pspec.xml
-sudo eopkg it teams-*.eopkg;sudo rm teams-*.eopkg
-```
-
-### ObinsKit
-```
-sudo eopkg.py3 bi --ignore-safety https://raw.githubusercontent.com/chax/solus-3rd-party-chax/master/system/utils/obinskit/pspec.xml
-sudo eopkg it obinskit-*.eopkg;sudo rm obinskit-*.eopkg
+```sh
+sudo eopkg.py3 bi --ignore-safety pspec.xml
+sudo eopkg it *.eopkg;sudo rm *.eopkg
 ```
 
-### utsushi-plugin-networkscan
+If you want to install it without cloning this git repository, just use url instead `pspec.xml` file path:
 ```
-sudo eopkg.py3 bi --ignore-safety https://raw.githubusercontent.com/chax/solus-3rd-party-chax/master/office/utsushi-plugin-networkscan/pspec.xml
-sudo eopkg it utsushi-plugin-networkscan-*.eopkg;sudo rm utsushi-plugin-networkscan-*.eopkg
+https://raw.githubusercontent.com/chax/solus-3rd-party-chax/master/{path_to_package}/pspec.xml
 ```
