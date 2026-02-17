@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libfprint-2-tod1-goodix</Name>
+        <Packager>
+            <Name>Mislav Čakarić</Name>
+            <Email>mcakaric@gmail.com</Email>
+        </Packager>
+        <Summary>Libfprint Goodix driver</Summary>
+        <Description>Proprietary driver for Goodix fingerprint readers from Ubuntu launchpad</Description>
+        <License>Custom</License>
+        <Archive sha1sum="909080fbf65d984b32cec36d450eb0fcabc5d9e1" type="binary">http://dell.archive.canonical.com/updates/pool/public/libf/libfprint-2-tod1-goodix/libfprint-2-tod1-goodix_0.0.6.orig.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <RuntimeDependencies>
+            <Dependency>libfprint-tod</Dependency>
+        </RuntimeDependencies>
+        <Name>libfprint-2-tod1-goodix</Name>
+        <Icon>libfprint-2-tod1-goodix</Icon>
+        <Files>
+            <Path fileType="*">/</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>17-02-2026</Date>
+            <Version>0.0.6</Version>
+            <Comment>Add libfprint-2-tod1-goodix to repository</Comment>
+            <Name>Mislav Čakarić</Name>
+            <Email>mcakaric@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
